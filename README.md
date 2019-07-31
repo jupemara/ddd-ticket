@@ -4,6 +4,46 @@
 `https://twitter.com/araottii/status/1151510898042798081` により、ワイもうんコードを提出することにしました。
 `#チケット料金モデリング`のハッシュタグは`https://twitter.com/at_grandpa/status/1150633625802563584`まで読んだ状態で以下のコードを書いています。
 
+## このrepositoryについて
+
+[qiitaにまとめました](https://example.com)。
+
+### how to use
+
+#### インストールとビルド
+
+```bash
+$ npm install && npm run build
+```
+
+#### 実行について
+
+```bash
+$ echo '{"movie": "general", "customerTypes": ["handicapped"], "datetime": "1970-01-01T00:00:00+09:00"}' | node scripts/start.js
+```
+
+##### データ構造
+
+ref: https://github.com/jupemara/ddd-ticket/blob/master/src/adapter/controller/request_payload/CalculateAmountOfTickets.ts
+
+```TypeScript
+{
+  movie: String;
+  customerTypes: String[];
+  datetime: String; // as ISO8601
+}
+```
+
+e.g:
+
+```json
+{
+  "movie": "general",
+  "customerTypes": ["handicapped"],
+  "datetime": "1970-01-01T00:00:00+09:00"
+}
+```
+
 ## 前提条件
 
 今回のドメインモデリングではオフラインでのデータが必要(学生証の提示とかそういうの)なので、映画館受付スタッフが受付で画面をポチポチしていくようなケースを考えました。(もちろんオンラインで決済するケースもあると思うんですが、あくまでスコープを映画館受付スタッフが人を見て、"学生さん5人ですね、5人分の学生証提示してください"的なユースケースです。)
