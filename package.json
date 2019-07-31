@@ -1,0 +1,32 @@
+{
+  "name": "ddd-ticket",
+  "version": "0.0.1",
+  "description": "#チケット料金モデリング",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo 'so far no test...'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ddd-ticket"
+  },
+  "keywords": [
+    "ddd-ticket"
+  ],
+  "author": "JumpeiArashi",
+  "license": "WTFPL",
+  "dependencies": {
+    "dayjs": "^1.8.15",
+    "japanese-holidays": "^1.0.8"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}
