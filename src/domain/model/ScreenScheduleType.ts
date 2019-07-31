@@ -1,0 +1,10 @@
+export type Datetime = string;
+export type Day = number;
+export type Hour = number;
+export type DayOfTheWeek = 'Mon'|'Tue'|'Wed'|'Thu'|'Fri'|'Sat'|'Sun';
+export type ScreenScheduleType = string;
+export const dayTimeOfWeekDay = 'dayTimeOfWeekDay' as ScreenScheduleType;
+export const lateShowOfWeekDay = 'lateShowOfWeekDay' as ScreenScheduleType;
+export const dayTimeOfWeekEndAndHolidays = 'dayTimeOfWeekEndAndHolidays' as ScreenScheduleType;
+export const lateShowOfWeekEndAndHolidays = 'lateShowOfWeekEndAndHolidays' as ScreenScheduleType;
+export const dayOfMovie = 'dayOfMovie' as ScreenScheduleType;
