@@ -6,7 +6,7 @@
 
 ## このrepositoryについて
 
-[qiitaにまとめました](https://example.com)。
+[qiitaにまとめました](https://qiita.com/JumpeiArashi/items/8abf2ef28d9bc07e613a)。
 
 ### how to use
 
@@ -159,6 +159,8 @@ class Ticket {
 - 各種(例えば一般, シニアなど)クラスを定義するかどうか
     + ここ最後までめっちゃ悩みましたが(なんなら今も悩んでますｗ)、映画館受付スタッフがポチポチしていくのであれば種類フィールドだけを持てばいいのかなと考え、作りませんでした。ただ将来的には `interface Customer` からの `class Student implements Customer` 的な形で学生証を持ってて且つ年齢がxx以下なら学生とするみたいなビジネスロジックを入れてもいいのかなと考えています
         * っというかそもそもこういうの実は解決されている気がする(自分の知識不足)
+- EntityにIdを付与するかどうか
+    + 同一性を議論するなら、Order, Ticket, MovieにはIdentity可能なIdが必要が必要に思える。一方上映スケジュールはそれ自体には意味がなくて、Movieの種類と顧客の種類との組み合わせる要素としてのひとつなのでValueObjectとして扱うことができるとオモワレ
 
 ### 障害者と同伴者を制限する
 
